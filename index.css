@@ -1,7 +1,7 @@
 .text1 {
 	color: white;
 	background-color: green;
-	font-family: sans-serif;
+	font-family: Verdana;
     padding: 0px 2px;
 }
 .space1 {
@@ -9,4 +9,16 @@
 }
 .space2 {
 	margin-bottom: 5px;
+}
+#printStar {
+	white-space: pre;
+	margin-top: 20px;
+	color: #ff0066;
+	font-family: Verdana
+}
+#printMountainStar {
+	white-space: pre;
+	margin-top: 20px;
+	color: #ff0066;
+	font-family: Verdana
 }

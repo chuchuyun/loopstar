@@ -13,6 +13,18 @@ function generateStar () {
     	}
     	result += '\n';	
     }
-    console.log(result)
+    document.getElementById("printStar").innerHTML = result;
 }
+
+function generateMountainStar () {
+	var width = document.getElementById("width").value;
+	width = parseInt(width, 10);	
+	var result = "";
+	for (var i=0; i<width; i++) {
+		result += "*" + i ;
+		result += "\n";
+	}
+	document.getElementById("printMountainStar").innerHTML = result;
+}
+
 
