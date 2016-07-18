@@ -1,7 +1,7 @@
 function generateStar () {
     console.log("Hello, World!");
-    var width = document.getElementById("width").value
-    var height = document.getElementById("height").value
+    var width = document.getElementById("width").value;
+    var height = document.getElementById("height").value;
     
     width = parseInt(width, 10);
     height = parseInt(height, 10);
@@ -18,13 +18,28 @@ function generateStar () {
 
 function generateMountainStar () {
 	var width = document.getElementById("width").value;
-	width = parseInt(width, 10);	
+    var height = document.getElementById("height").value;
+	
+    width = parseInt(width, 10);
+    height = parseInt(height, 10);	
 	var result = "";
-	for (var i=0; i<width; i++) {
-		result += "*" + i ;
-		result += "\n";
-	}
-	document.getElementById("printMountainStar").innerHTML = result;
+    for (var i=0; i<width; i++) {
+	   for (var j=0; j<=i; j++) {
+            result += "*";
+        }
+        result += "\n";
+    }
+
+    var result2 = "";
+    for (i=width; i>=0; i--) {
+        for (j=i; j>0; j--) {
+            result2 += "*";
+        }
+        result2 += "\n";
+    }
+	
+
+	document.getElementById("printMountainStar").innerHTML = result+result2;
 }
 
 
