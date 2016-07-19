@@ -54,8 +54,15 @@ function generateStairStar () {
         }
         result += "\n";
     }
+    var result2 = "";
+    for (i=width-1; i>=0; i -= height) {
+        for (j=i; j>0; j-- ) {
+            result2 += "*";
+        }
+        result2 += "\n";
+    }
 
 
-    document.getElementById("printStairStar").innerHTML = result;
+    document.getElementById("printStairStar").innerHTML = result+result2;
 }
 
