@@ -31,7 +31,7 @@ function generateMountainStar () {
     }
 
     var result2 = "";
-    for (i=width; i>=0; i--) {
+    for (i=width-1; i>=0; i--) {
         for (j=i; j>0; j--) {
             result2 += "*";
         }
@@ -41,5 +41,21 @@ function generateMountainStar () {
 
 	document.getElementById("printMountainStar").innerHTML = result+result2;
 }
+function generateStairStar () {
+    var width = document.getElementById("width").value;
+    var height = document.getElementById("height").value;
+    
+    width = parseInt(width, 10);
+    height = parseInt(height, 10);  
+    var result = "";
+    for (var i=0; i<width; i += height) {
+       for (var j=0; j<=i; j++) {
+            result += "*";
+        }
+        result += "\n";
+    }
 
+
+    document.getElementById("printStairStar").innerHTML = result;
+}
 
