@@ -48,14 +48,14 @@ function generateStairStar () {
     width = parseInt(width, 10);
     height = parseInt(height, 10);  
     var result = "";
-    for (var i=0; i<width; i += height) {
-       for (var j=0; j<=i; j++) {
+    for (var i=0; i<=width; i += height) {
+       for (var j=0; j<i; j++) {
             result += "*";
         }
         result += "\n";
     }
     var result2 = "";
-    for (i=width-1; i>=0; i -= height) {
+    for (i=width-height; i>=0; i -= height) {
         for (j=i; j>0; j-- ) {
             result2 += "*";
         }
@@ -65,4 +65,3 @@ function generateStairStar () {
 
     document.getElementById("printStairStar").innerHTML = result+result2;
 }
-

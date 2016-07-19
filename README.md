@@ -7,6 +7,7 @@ output width x height '*'
 
 example
 
+1. generate star
 width: 3, height: 4
 
 output
@@ -22,3 +23,28 @@ output
 
 ******
 ******
+
+2. mountainstar
+width: 4
+
+output
+
+*
+**
+***
+****
+***
+**
+*
+
+3. stairstar
+
+width: 8, height: 2
+
+**
+****
+******
+********
+******
+****
+**
